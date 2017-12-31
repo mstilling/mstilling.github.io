@@ -31,6 +31,17 @@
     }
 }
 
+@keyframes resumeButton {
+    0% {
+        transform: rotate(-90deg) translateY(200px);
+        opacity: 0;
+    }
+    100% {
+        transform:  rotate(-90deg) translateY(0);
+        opacity: 1;
+    }
+}
+
 @keyframes portfolioButton {
     0% {
         transform: translateX(-200px) rotate(90deg);

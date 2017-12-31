@@ -21,7 +21,7 @@ header { z-index: 99;}
 #navLogo, #hireButton {animation: slideInFromLeft 750ms ease 1000ms backwards;}
 #hamburger, .social {animation: slideInFromRight 750ms ease 1000ms backwards;}
 #portfolioButton {animation: portfolioButton 750ms ease 1000ms backwards;}
-.none, #resumeButton {animation: slideInFromRight 750ms ease 1000ms backwards;}
+#resumeButton {animation: resumeButton 750ms ease 1000ms backwards;}
 
 body {
   margin: 0;
