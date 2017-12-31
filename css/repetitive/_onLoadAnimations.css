@@ -1,0 +1,95 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0); }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0); }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes slideInFromLeft {
+  from {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes slideInFromLeft {
+  from {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes portfolioButton {
+  0% {
+    -webkit-transform: translateX(-200px) rotate(90deg);
+    transform: translateX(-200px) rotate(90deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(90deg);
+    transform: translateX(0) rotate(90deg);
+    opacity: 1; } }
+
+@keyframes portfolioButton {
+  0% {
+    -webkit-transform: translateX(-200px) rotate(90deg);
+    transform: translateX(-200px) rotate(90deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(90deg);
+    transform: translateX(0) rotate(90deg);
+    opacity: 1; } }
+
+@-webkit-keyframes resume {
+  0% {
+    -webkit-transform: translateX(200px) rotate(-90deg);
+    transform: translateX(200px) rotate(-90deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(-90deg);
+    transform: translateX(0) rotate(-90deg);
+    opacity: 1; } }
+
+@keyframes resume {
+  0% {
+    -webkit-transform: translateX(200px) rotate(-90deg);
+    transform: translateX(200px) rotate(-90deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(-90deg);
+    transform: translateX(0) rotate(-90deg);
+    opacity: 1; } }

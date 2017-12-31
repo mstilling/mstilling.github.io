@@ -1,0 +1,52 @@
+.hero {
+  width: 100% auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  //boxes
+  .box {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+
+    //BOX A
+    &.a {
+      background: $gradient;
+    }
+
+    //BOX B
+    &.b {
+      background-color: white;
+
+      @media screen and (max-width: 480px) {
+        padding-bottom: 10%;
+      }
+
+      p {
+        text-align: center;
+        width: 320px;
+
+        @media screen and (max-width: 480px) {
+          line-height: 1.5rem;
+        }
+
+        @media screen and (max-width: 330px) {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

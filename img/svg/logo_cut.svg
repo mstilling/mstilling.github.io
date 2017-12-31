@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="m" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#231F20;}
+</style>
+<rect id="lastLine" x="33" class="st0" width="7" height="40"/>
+<polygon id="thirdLine" class="st0" points="31,1.6 31,21.1 23.8,40 16.3,40 16.3,40 20,30.2 "/>
+<polygon id="secondLine" class="st0" points="18.9,27.4 15.2,37.2 9,21.1 9,1.5 "/>
+<rect id="firstLine" class="st0" width="7" height="40"/>
+</svg>

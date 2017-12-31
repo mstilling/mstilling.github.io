@@ -1,0 +1,35 @@
+@import "partials/onLoadAnimations";
+@import "partials/textStyles";
+@import "partials/header";
+@import "partials/hamburger";
+@import "partials/toggleNav";
+@import "partials/hero";
+@import "partials/button";
+
+$lightGray: #9B9B9B;
+$darkGray: #4A4A4A;
+$gradient: linear-gradient(-45deg, #FE7400 0%, #8A05FF 100%);
+
+/* z index all */
+header { z-index: 99;}
+#toggleNav { z-index: 98; }
+.fixedButton { z-index: 98;}
+.social { z-index: 98;}
+
+
+.box {animation: fadeIn 2000ms ease 500ms both;}
+#navLogo, #hireButton {animation: slideInFromLeft 750ms ease 1000ms backwards;}
+#hamburger, .social {animation: slideInFromRight 750ms ease 1000ms backwards;}
+#portfolioButton {animation: portfolioButton 750ms ease 1000ms backwards;}
+.none, #resumeButton {animation: slideInFromRight 750ms ease 1000ms backwards;}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}

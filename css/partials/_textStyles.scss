@@ -1,0 +1,25 @@
+$lightGray: #9B9B9B;
+$darkGray: #4A4A4A;
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $darkGray;
+
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: $lightGray;
+  line-height: 2;
+
+  @media screen and (max-width: 330px) {
+    font-size: .9rem;
+    line-height: 1.7;
+  }
+}
