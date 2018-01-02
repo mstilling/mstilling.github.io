@@ -1,3 +1,14 @@
+@import url("//hello.myfonts.net/count/3577b1");
+@font-face {
+  font-family: 'Harbour-Medium';
+  src: url("../fonts/3577B1_0_0.eot");
+  src: url("../fonts/3577B1_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/3577B1_0_0.woff2") format("woff2"), url("../fonts/3577B1_0_0.woff") format("woff"), url("../fonts/3577B1_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Harbour-Bold';
+  src: url("../fonts/3577B1_1_0.eot");
+  src: url("../fonts/3577B1_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/3577B1_1_0.woff2") format("woff2"), url("../fonts/3577B1_1_0.woff") format("woff"), url("../fonts/3577B1_1_0.ttf") format("truetype"); }
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -95,12 +106,17 @@
     opacity: 1; } }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: Harbour-Medium, serif;
   font-size: 2rem;
   font-weight: 700;
   color: #4A4A4A;
+  letter-spacing: 5px;
   margin: 0;
   padding: 0; }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.9rem;
+      line-height: 1.7; } }
 
 p {
   font-family: 'Work Sans', sans-serif;
@@ -341,7 +357,7 @@ header {
       transition: transform 750ms cubic-bezier(0, 0.9, 0.64, 1) 1000ms, width 350ms cubic-bezier(0.38, 0, 0.66, 1) 250ms;
       transition: transform 750ms cubic-bezier(0, 0.9, 0.64, 1) 1000ms, width 350ms cubic-bezier(0.38, 0, 0.66, 1) 250ms, -webkit-transform 750ms cubic-bezier(0, 0.9, 0.64, 1) 1000ms; }
   #toggleNav nav {
-    font-family: 'Playfair Display', serif;
+    font-family: Harbour-Medium, serif;
     font-size: 3rem;
     text-align: center;
     width: 300px;
@@ -491,6 +507,19 @@ header {
       @media screen and (max-width: 480px) {
         .hero .box.b {
           padding-bottom: 10%; } }
+      .hero .box.b h1 {
+        -webkit-transform: translateX(4px);
+        -ms-transform: translateX(4px);
+        transform: translateX(4px); }
+      .hero .box.b .line {
+        background-color: #9B9B9B;
+        width: 220px;
+        height: 1px;
+        margin: 0;
+        padding: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px); }
       .hero .box.b p {
         text-align: center;
         width: 320px; }
@@ -505,7 +534,7 @@ a.button {
   position: relative;
   padding: 5px 5px;
   overflow: hidden;
-  font-family: 'Work Sans', sans-serif;
+  font-family: Harbour-Medium, serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
@@ -564,7 +593,8 @@ a.button.fixedButton {
   position: fixed;
   font-weight: 400;
   letter-spacing: 3px;
-  font-size: 12px; }
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif; }
 
 a.button.fixedButton#portfolioButton {
   top: 48.75%;

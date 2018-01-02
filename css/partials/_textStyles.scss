@@ -2,13 +2,19 @@ $lightGray: #9B9B9B;
 $darkGray: #4A4A4A;
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: Harbour-Medium, serif;
   font-size: 2rem;
   font-weight: 700;
   color: $darkGray;
+  letter-spacing: 5px;
 
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.9rem;
+    line-height: 1.7;
+  }
 }
 
 p {

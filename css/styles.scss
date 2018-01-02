@@ -1,3 +1,12 @@
+@import url("//hello.myfonts.net/count/3577b1");
+@font-face {font-family: 'Harbour-Medium';
+            src: url('../fonts/3577B1_0_0.eot');
+            src: url('../fonts/3577B1_0_0.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/3577B1_0_0.woff2') format('woff2'),url('../fonts/3577B1_0_0.woff') format('woff'),url('../fonts/3577B1_0_0.ttf') format('truetype');
+          }
+@font-face {font-family: 'Harbour-Bold';src: url('../fonts/3577B1_1_0.eot');src: url('../fonts/3577B1_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3577B1_1_0.woff2') format('woff2'),url('../fonts/3577B1_1_0.woff') format('woff'),url('../fonts/3577B1_1_0.ttf') format('truetype');}
+
+
 @import "partials/onLoadAnimations";
 @import "partials/textStyles";
 @import "partials/header";
