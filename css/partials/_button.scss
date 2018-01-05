@@ -47,8 +47,8 @@ a.button {
   }
 
   &:hover:before {
-    width: 90%;
-    left: 3%;
+    width: 77%;
+    left: 8%;
     transition: width 350ms ease,
                 left 350ms ease;
   }
@@ -64,25 +64,6 @@ a.button.fixedButton {
   font-family: 'Work Sans', sans-serif;
 }
 
-a.button.fixedButton#portfolioButton {
-  top: 48.75%;
-  left: -15px;
-  transform: rotate(90deg) scale(1);
-
-  &:hover {
-    transform: rotate(90deg) scale(1.3);
-  }
-
-  @media screen and (max-width: 768px) {
-    color: $lightGray;
-    left: -35px;
-  }
-
-  @media screen and (max-width: 480px) {
-      display: none;
-  }
-}
-
 a.button.fixedButton#hireButton {
   bottom: 32px;
   left: 35px;
@@ -91,25 +72,6 @@ a.button.fixedButton#hireButton {
       bottom: 17px;
       left: 17px;
       color: $lightGray;
-  }
-}
-
-a.button.fixedButton#resumeButton {
-  top: 48.1%;
-  right: -10px;
-  transform: rotate(-90deg) scale(1);
-
-  &:hover {
-    transform: rotate(-90deg) scale(1.3);
-  }
-
-  @media screen and (max-width: 768px) {
-    color: $lightGray;
-    right: -22px;
-  }
-
-  @media screen and (max-width: 480px) {
-      display: none;
   }
 }
 
@@ -167,7 +129,7 @@ a.button.fixedButton#resumeButton {
     }
   }
 
-  a.social#facebook {
+  a.social#instagram {
     bottom: 144px;
 
     @media screen and (max-width: 768px) {
@@ -176,7 +138,7 @@ a.button.fixedButton#resumeButton {
     }
   }
 
-  a.social#instagram {
+  a.social#github {
     bottom: 108px;
 
     @media screen and (max-width: 768px) {

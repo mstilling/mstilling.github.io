@@ -1,10 +1,21 @@
 @import url("//hello.myfonts.net/count/3577b1");
-@font-face {font-family: 'Harbour-Medium';
-            src: url('../fonts/3577B1_0_0.eot');
-            src: url('../fonts/3577B1_0_0.eot?#iefix') format('embedded-opentype'),
-            url('../fonts/3577B1_0_0.woff2') format('woff2'),url('../fonts/3577B1_0_0.woff') format('woff'),url('../fonts/3577B1_0_0.ttf') format('truetype');
+@import url("//hello.myfonts.net/count/357ee9");
+
+@font-face {
+  font-family: 'Harbour-Light';
+  src: url('../fonts/357EE9_0_0.eot');
+  src: url('../fonts/357EE9_0_0.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/357EE9_0_0.woff2') format('woff2'),url('../fonts/357EE9_0_0.woff')
+  format('woff'),url('../fonts/357EE9_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Harbour-Medium';
+  src: url('../fonts/3577B1_0_0.eot');
+  src: url('../fonts/3577B1_0_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/3577B1_0_0.woff2') format('woff2'),url('../fonts/3577B1_0_0.woff')
+       format('woff'),url('../fonts/3577B1_0_0.ttf') format('truetype');
           }
-@font-face {font-family: 'Harbour-Bold';src: url('../fonts/3577B1_1_0.eot');src: url('../fonts/3577B1_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3577B1_1_0.woff2') format('woff2'),url('../fonts/3577B1_1_0.woff') format('woff'),url('../fonts/3577B1_1_0.ttf') format('truetype');}
 
 
 @import "partials/onLoadAnimations";
@@ -25,12 +36,12 @@ header { z-index: 99;}
 .fixedButton { z-index: 98;}
 .social { z-index: 98;}
 
-
-.box {animation: fadeIn 2000ms ease 500ms both;}
-#navLogo, #hireButton {animation: slideInFromLeft 750ms ease 1000ms backwards;}
-#hamburger, .social {animation: slideInFromRight 750ms ease 1000ms backwards;}
-#portfolioButton {animation: portfolioButton 750ms ease 1000ms backwards;}
-#resumeButton {animation: resumeButton 750ms ease 1000ms backwards;}
+/* onload animation */
+.a {animation: boxA 1000ms cubic-bezier(.84,.01,.14,.99) 500ms both;}
+.b {animation: boxB 1000ms cubic-bezier(.84,.01,.14,.99) 500ms both;}
+#navLogo, #hireButton {animation: slideInFromLeft 750ms cubic-bezier(0,.36,0,.99) 1000ms backwards;}
+#hamburger, .social {animation: slideInFromRight 750ms cubic-bezier(0,.36,0,.99) 1000ms backwards;}
+#workButton {animation: resumeButton 750ms cubic-bezier(0,.36,0,.99) 1000ms backwards;}
 
 body {
   margin: 0;

@@ -25,11 +25,21 @@
     //BOX A
     &.a {
       background: $gradient;
+
+      h2 {
+        color: white;
+        text-align: center;
+      }
     }
 
     //BOX B
     &.b {
       background-color: white;
+
+      h1 {
+        letter-spacing: 5px;
+        margin-bottom: 4px;
+      }
 
       @media screen and (max-width: 480px) {
         padding-bottom: 10%;
