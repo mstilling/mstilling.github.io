@@ -1,17 +1,10 @@
-//hamburger jQuery code
-(function () {
-	$('#hamburger').on('click', function() {
-		$('#bun').toggleClass('animate');
-    $('#cheese').toggleClass('animate');
-    $('#patty').toggleClass('animate');
-    $('#toggleNav').toggleClass('animate');
-    $('#navLogo').toggleClass('animate');
-    $('#menuLine1').toggleClass('animate');
-    $('#menuLine2').toggleClass('animate');
-    $('#nav1').toggleClass('animate');
-    $('#nav2').toggleClass('animate');
-    $('#nav3').toggleClass('animate');
-    $('#nav4').toggleClass('animate');
-    $('#withLove').toggleClass('animate');
-	})
-})();
+$("#menu").click(function(){
+  $("#menu").toggleClass("animate");
+  $("#menuBar1").toggleClass("animate");
+  $("#menuBar2").toggleClass("animate");
+  $("#menuBar3").toggleClass("animate");
+  $("#toggleNav").toggleClass("animate");
+  $("nav").toggleClass("animate");
+  $("#logo").toggleClass("animate");
+  $(".project").toggleClass("animate");
+});
