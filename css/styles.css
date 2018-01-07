@@ -1,206 +1,228 @@
+@import url("//hello.myfonts.net/count/357ee9");
+@font-face {
+  font-family: 'Harbour-Light';
+  src: url("../fonts/357EE9_0_0.eot");
+  src: url("../fonts/357EE9_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/357EE9_0_0.woff2") format("woff2"), url("../fonts/357EE9_0_0.woff") format("woff"), url("../fonts/357EE9_0_0.ttf") format("truetype"); }
+
+h1 {
+  font-family: Harbour-Light, serif;
+  font-size: 2.5rem;
+  line-height: 1.2; }
+
+h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem; }
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: .8rem; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
 header {
   position: fixed; }
-  header #logo {
+  header a#logo {
     position: fixed;
     top: 20px;
-    left: 20px;
-    -webkit-transition: -webkit-transform 150ms ease;
-    transition: -webkit-transform 150ms ease;
-    -o-transition: transform 150ms ease;
-    transition: transform 150ms ease;
-    transition: transform 150ms ease, -webkit-transform 150ms ease; }
-    header #logo:hover {
-      -webkit-transform: scale3d(1.3, 1.3, 1.3);
-      transform: scale3d(1.3, 1.3, 1.3);
-      -webkit-transition: -webkit-transform 250ms ease;
-      transition: -webkit-transform 250ms ease;
-      -o-transition: transform 250ms ease;
-      transition: transform 250ms ease;
-      transition: transform 250ms ease, -webkit-transform 250ms ease; }
-      header #logo:hover svg {
-        fill: gray;
-        -webkit-transition: all 550ms ease;
-        -o-transition: all 550ms ease;
-        transition: all 550ms ease; }
-    header #logo svg {
-      width: 40px;
+    left: 18px;
+    padding: 0 2px 4px 2px;
+    overflow: hidden; }
+    header a#logo #mLogo {
+      fill: white; }
+    header a#logo:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      width: 44px;
       height: 40px;
-      fill: #413f41;
-      -webkit-transition: fill 250ms ease;
-      -o-transition: fill 250ms ease;
-      transition: fill 250ms ease; }
-    header #logo.animate svg {
-      fill: white;
-      -webkit-transition: fill 250ms ease 600ms;
-      -o-transition: fill 250ms ease 600ms;
-      transition: fill 250ms ease 600ms; }
-  header #menu {
+      background: -webkit-radial-gradient(bottom right, circle, #FF9400, #FF00D0, #8900FF);
+      background: -o-radial-gradient(bottom right, circle, #FF9400, #FF00D0, #8900FF);
+      background: radial-gradient(circle at bottom right, #FF9400, #FF00D0, #8900FF);
+      background-blend-mode: multiply;
+      z-index: -1;
+      -webkit-transition: top 300ms cubic-bezier(0.63, 0, 0.37, 1);
+      -o-transition: top 300ms cubic-bezier(0.63, 0, 0.37, 1);
+      transition: top 300ms cubic-bezier(0.63, 0, 0.37, 1); }
+    header a#logo:hover:after {
+      top: -100%;
+      -webkit-transition: top 500ms cubic-bezier(0.63, 0, 0.37, 1);
+      -o-transition: top 500ms cubic-bezier(0.63, 0, 0.37, 1);
+      transition: top 500ms cubic-bezier(0.63, 0, 0.37, 1); }
+  header #menuButton {
     position: fixed;
     top: 20px;
     right: 20px;
     width: 40px;
     height: 40px;
-    -webkit-transition: -webkit-transform 150ms ease;
-    transition: -webkit-transform 150ms ease;
-    -o-transition: transform 150ms ease;
-    transition: transform 150ms ease;
-    transition: transform 150ms ease, -webkit-transform 150ms ease;
-    cursor: pointer; }
-    header #menu:hover {
-      -webkit-transform: scale3d(1.3, 1.3, 1.3);
-      transform: scale3d(1.3, 1.3, 1.3);
-      -webkit-transition: -webkit-transform 250ms ease;
-      transition: -webkit-transform 250ms ease;
-      -o-transition: transform 250ms ease;
-      transition: transform 250ms ease;
-      transition: transform 250ms ease, -webkit-transform 250ms ease; }
-    header #menu.animate #menuBar1:after,
-    header #menu.animate #menuBar2:after,
-    header #menu.animate #menuBar3:after {
+    cursor: pointer;
+    overflow: hidden; }
+    header #menuButton:before {
       content: "";
-      background-color: white;
-      -webkit-transition: 0 ease 600ms;
-      -o-transition: 0 ease 600ms;
-      transition: 0 ease 600ms; }
-    header #menu.animate #menuBar1:before,
-    header #menu.animate #menuBar2:before,
-    header #menu.animate #menuBar3:before {
-      content: "";
-      background: black; }
-    header #menu #menuBar1,
-    header #menu #menuBar2,
-    header #menu #menuBar3 {
       position: absolute;
-      left: 4px;
-      width: 32px;
+      width: 40px;
+      height: 80px;
+      background: -webkit-radial-gradient(bottom right, circle, #FF9400, #FF00D0, #8900FF);
+      background: -o-radial-gradient(bottom right, circle, #FF9400, #FF00D0, #8900FF);
+      background: radial-gradient(circle at bottom right, #FF9400, #FF00D0, #8900FF);
+      background-size: cover;
+      z-index: -1;
+      -webkit-transform: translateY(40px);
+      -ms-transform: translateY(40px);
+      transform: translateY(40px);
+      -webkit-transition: -webkit-transform 300ms cubic-bezier(0.63, 0, 0.37, 1);
+      transition: -webkit-transform 300ms cubic-bezier(0.63, 0, 0.37, 1);
+      -o-transition: transform 300ms cubic-bezier(0.63, 0, 0.37, 1);
+      transition: transform 300ms cubic-bezier(0.63, 0, 0.37, 1);
+      transition: transform 300ms cubic-bezier(0.63, 0, 0.37, 1), -webkit-transform 300ms cubic-bezier(0.63, 0, 0.37, 1); }
+    header #menuButton #menuBar1,
+    header #menuButton #menuBar2 {
+      position: absolute;
+      width: 24px;
       height: 2px;
-      background-color: gray;
-      margin: 0 auto; }
-    header #menu #menuBar1:before,
-    header #menu #menuBar2:before,
-    header #menu #menuBar3:before {
-      content: "";
-      position: absolute;
-      width: 0;
-      background: White;
-      height: 2px;
-      -webkit-transition: width 150ms ease;
-      -o-transition: width 150ms ease;
-      transition: width 150ms ease; }
-    header #menu #menuBar1:after,
-    header #menu #menuBar2:after,
-    header #menu #menuBar3:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      background-color: #413f41;
-      height: 2px; }
-    header #menu #menuBar1 {
-      top: 9px;
-      -webkit-transition: top 100ms ease 200ms, background-color 150ms ease, -webkit-transform 100ms ease;
-      transition: top 100ms ease 200ms, background-color 150ms ease, -webkit-transform 100ms ease;
-      -o-transition: top 100ms ease 200ms, background-color 150ms ease, transform 100ms ease;
-      transition: top 100ms ease 200ms, background-color 150ms ease, transform 100ms ease;
-      transition: top 100ms ease 200ms, background-color 150ms ease, transform 100ms ease, -webkit-transform 100ms ease; }
-      header #menu #menuBar1.animate {
+      margin-left: 8px;
+      margin-right: 8px;
+      background-color: white; }
+    header #menuButton #menuBar1 {
+      top: 13px;
+      -webkit-transition: top 250ms ease 250ms, -webkit-transform 250ms ease;
+      transition: top 250ms ease 250ms, -webkit-transform 250ms ease;
+      -o-transition: top 250ms ease 250ms, transform 250ms ease;
+      transition: top 250ms ease 250ms, transform 250ms ease;
+      transition: top 250ms ease 250ms, transform 250ms ease, -webkit-transform 250ms ease; }
+      header #menuButton #menuBar1.animate {
         top: 19px;
-        background-color: white;
         -webkit-transform: rotateZ(45deg);
         -ms-transform: rotate(45deg);
         transform: rotateZ(45deg);
-        -webkit-transition: top 150ms ease, background-color 150ms ease, -webkit-transform 150ms ease 300ms;
-        transition: top 150ms ease, background-color 150ms ease, -webkit-transform 150ms ease 300ms;
-        -o-transition: top 150ms ease, background-color 150ms ease, transform 150ms ease 300ms;
-        transition: top 150ms ease, background-color 150ms ease, transform 150ms ease 300ms;
-        transition: top 150ms ease, background-color 150ms ease, transform 150ms ease 300ms, -webkit-transform 150ms ease 300ms; }
-    header #menu #menuBar2 {
-      top: 19px;
-      -webkit-transition: opacity 100ms ease;
-      -o-transition: opacity 100ms ease;
-      transition: opacity 100ms ease; }
-      header #menu #menuBar2.animate {
-        opacity: 0;
-        -webkit-transition: opacity 150ms ease;
-        -o-transition: opacity 150ms ease;
-        transition: opacity 150ms ease; }
-    header #menu #menuBar3 {
-      bottom: 9px;
-      -webkit-transition: bottom 100ms ease 200ms, background-color 150ms ease, -webkit-transform 100ms ease;
-      transition: bottom 100ms ease 200ms, background-color 150ms ease, -webkit-transform 100ms ease;
-      -o-transition: bottom 100ms ease 200ms, background-color 150ms ease, transform 100ms ease;
-      transition: bottom 100ms ease 200ms, background-color 150ms ease, transform 100ms ease;
-      transition: bottom 100ms ease 200ms, background-color 150ms ease, transform 100ms ease, -webkit-transform 100ms ease; }
-      header #menu #menuBar3.animate {
+        -webkit-transition: top 250ms ease, -webkit-transform 250ms ease 250ms;
+        transition: top 250ms ease, -webkit-transform 250ms ease 250ms;
+        -o-transition: top 250ms ease, transform 250ms ease 250ms;
+        transition: top 250ms ease, transform 250ms ease 250ms;
+        transition: top 250ms ease, transform 250ms ease 250ms, -webkit-transform 250ms ease 250ms; }
+    header #menuButton #menuBar2 {
+      bottom: 13px;
+      -webkit-transition: bottom 250ms ease 250ms, -webkit-transform 250ms ease;
+      transition: bottom 250ms ease 250ms, -webkit-transform 250ms ease;
+      -o-transition: bottom 250ms ease 250ms, transform 250ms ease;
+      transition: bottom 250ms ease 250ms, transform 250ms ease;
+      transition: bottom 250ms ease 250ms, transform 250ms ease, -webkit-transform 250ms ease; }
+      header #menuButton #menuBar2.animate {
         bottom: 19px;
-        background-color: white;
         -webkit-transform: rotateZ(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotateZ(-45deg);
-        -webkit-transition: bottom 150ms ease, background-color 150ms ease 300ms, -webkit-transform 150ms ease 300ms;
-        transition: bottom 150ms ease, background-color 150ms ease 300ms, -webkit-transform 150ms ease 300ms;
-        -o-transition: bottom 150ms ease, background-color 150ms ease 300ms, transform 150ms ease 300ms;
-        transition: bottom 150ms ease, background-color 150ms ease 300ms, transform 150ms ease 300ms;
-        transition: bottom 150ms ease, background-color 150ms ease 300ms, transform 150ms ease 300ms, -webkit-transform 150ms ease 300ms; }
-    header #menu #menuBar1:before {
-      -webkit-transition: width 150ms ease;
-      -o-transition: width 150ms ease;
-      transition: width 150ms ease; }
-    header #menu #menuBar2:before {
-      -webkit-transition: width 150ms ease 50ms;
-      -o-transition: width 150ms ease 50ms;
-      transition: width 150ms ease 50ms; }
-    header #menu #menuBar3:before {
-      -webkit-transition: width 150ms ease 100ms;
-      -o-transition: width 150ms ease 100ms;
-      transition: width 150ms ease 100ms; }
-    header #menu #menuBar1:after {
-      -webkit-transition: width 250ms ease 100ms;
-      -o-transition: width 250ms ease 100ms;
-      transition: width 250ms ease 100ms; }
-    header #menu #menuBar2:after {
-      -webkit-transition: width 250ms ease 150ms;
-      -o-transition: width 250ms ease 150ms;
-      transition: width 250ms ease 150ms; }
-    header #menu #menuBar3:after {
-      -webkit-transition: width 250ms ease 200ms;
-      -o-transition: width 250ms ease 200ms;
-      transition: width 250ms ease 200ms; }
-    header #menu:hover #menuBar1:before {
-      width: 100%;
-      -webkit-transition: width 150ms ease;
-      -o-transition: width 150ms ease;
-      transition: width 150ms ease; }
-    header #menu:hover #menuBar2:before {
-      width: 100%;
-      -webkit-transition: width 150ms ease 50ms;
-      -o-transition: width 150ms ease 50ms;
-      transition: width 150ms ease 50ms; }
-    header #menu:hover #menuBar3:before {
-      width: 100%;
-      -webkit-transition: width 150ms ease 100ms;
-      -o-transition: width 150ms ease 100ms;
-      transition: width 150ms ease 100ms; }
-    header #menu:hover #menuBar1:after {
-      width: 100%;
-      -webkit-transition: width 250ms ease 50ms;
-      -o-transition: width 250ms ease 50ms;
-      transition: width 250ms ease 50ms; }
-    header #menu:hover #menuBar2:after {
-      width: 100%;
-      -webkit-transition: width 250ms ease 100ms;
-      -o-transition: width 250ms ease 100ms;
-      transition: width 250ms ease 100ms; }
-    header #menu:hover #menuBar3:after {
-      width: 100%;
-      -webkit-transition: width 250ms ease 150ms;
-      -o-transition: width 250ms ease 150ms;
-      transition: width 250ms ease 150ms; }
-  header #socialIcons {
+        -webkit-transition: bottom 250ms ease, -webkit-transform 250ms ease 250ms;
+        transition: bottom 250ms ease, -webkit-transform 250ms ease 250ms;
+        -o-transition: bottom 250ms ease, transform 250ms ease 250ms;
+        transition: bottom 250ms ease, transform 250ms ease 250ms;
+        transition: bottom 250ms ease, transform 250ms ease 250ms, -webkit-transform 250ms ease 250ms; }
+  header #menuButton:hover:before {
+    -webkit-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    transform: translateY(-80px);
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.63, 0, 0.37, 1);
+    transition: -webkit-transform 500ms cubic-bezier(0.63, 0, 0.37, 1);
+    -o-transition: transform 500ms cubic-bezier(0.63, 0, 0.37, 1);
+    transition: transform 500ms cubic-bezier(0.63, 0, 0.37, 1);
+    transition: transform 500ms cubic-bezier(0.63, 0, 0.37, 1), -webkit-transform 500ms cubic-bezier(0.63, 0, 0.37, 1); }
+  header a#myName {
     position: fixed;
-    right: 20px;
+    bottom: 104px;
+    left: -67px;
+    -webkit-transform: rotateZ(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotateZ(90deg);
+    font-family: 'Work Sans', sans-serif;
+    font-size: .8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center; }
+  header #social {
+    position: fixed;
     bottom: 20px;
-    width: 40px;
-    height: auto;
+    right: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    header #social a {
+      color: white;
+      margin: 10px 0;
+      -webkit-transition: -webkit-transform 150ms ease;
+      transition: -webkit-transform 150ms ease;
+      -o-transition: transform 150ms ease;
+      transition: transform 150ms ease;
+      transition: transform 150ms ease, -webkit-transform 150ms ease; }
+      header #social a:hover {
+        -webkit-transform: scale3d(2, 2, 2);
+        transform: scale3d(2, 2, 2);
+        -webkit-transition: -webkit-transform 250ms ease;
+        transition: -webkit-transform 250ms ease;
+        -o-transition: transform 250ms ease;
+        transition: transform 250ms ease;
+        transition: transform 250ms ease, -webkit-transform 250ms ease; }
+
+#menu {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: top 800ms cubic-bezier(0.35, 0, 0, 1) 250ms;
+  -o-transition: top 800ms cubic-bezier(0.35, 0, 0, 1) 250ms;
+  transition: top 800ms cubic-bezier(0.35, 0, 0, 1) 250ms; }
+  #menu:before {
+    content: "";
+    position: absolute;
+    top: -100vh;
+    right: 50%;
+    width: 1px;
+    height: 100vh;
+    background: -webkit-radial-gradient(bottom right, circle, #FF9400, #FF00D0, #8900FF);
+    background: -o-radial-gradient(bottom right, circle, #FF9400, #FF00D0, #8900FF);
+    background: radial-gradient(circle at bottom right, #FF9400, #FF00D0, #8900FF);
+    z-index: -1;
+    -webkit-transition: top 800ms cubic-bezier(0.54, 0, 0, 1) 50ms;
+    -o-transition: top 800ms cubic-bezier(0.54, 0, 0, 1) 50ms;
+    transition: top 800ms cubic-bezier(0.54, 0, 0, 1) 50ms; }
+  #menu:after {
+    content: "";
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    width: 100%;
+    height: .4vh;
+    background: -webkit-radial-gradient(bottom right, circle, #FF9400, #FF00D0, #8900FF);
+    background: -o-radial-gradient(bottom right, circle, #FF9400, #FF00D0, #8900FF);
+    background: radial-gradient(circle at bottom right, #FF9400, #FF00D0, #8900FF);
+    -webkit-transition: top 800ms cubic-bezier(0.35, 0, 0, 1) 250ms;
+    -o-transition: top 800ms cubic-bezier(0.35, 0, 0, 1) 250ms;
+    transition: top 800ms cubic-bezier(0.35, 0, 0, 1) 250ms; }
+  #menu nav {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -208,137 +230,88 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
-    header #socialIcons a {
-      text-decoration: none;
-      color: #413f41; }
-      header #socialIcons a i {
-        display: block;
-        text-align: center;
-        padding: 10px 10px;
-        margin: 5px 0;
-        border-radius: 150px;
-        -webkit-transition: all 150ms ease;
-        -o-transition: all 150ms ease;
-        transition: all 150ms ease; }
-        header #socialIcons a i:first-child {
-          margin-top: 0; }
-        header #socialIcons a i:last-child {
-          margin-bottom: 0; }
-        header #socialIcons a i:hover {
-          -webkit-transform: scale3d(1.5, 1.5, 1.5);
-          transform: scale3d(1.5, 1.5, 1.5);
-          color: gray;
-          -webkit-transition: all 250ms ease;
-          -o-transition: all 250ms ease;
-          transition: all 250ms ease; }
-    header #socialIcons i {
-      display: block;
-      text-align: center;
-      padding: 10px 10px;
-      margin: 5px 0;
-      border-radius: 150px;
-      color: #413f41; }
-      header #socialIcons i:first-child {
-        margin-top: 0; }
-      header #socialIcons i:last-child {
-        margin-bottom: 0; }
-  header #message {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 40px;
-    color: white; }
-    header #message a {
-      text-decoration: none; }
-      header #message a i {
-        display: block;
-        text-align: center;
-        padding: 10px 10px;
-        border-radius: 150px;
-        color: #413f41;
-        -webkit-transition: all 150ms ease;
-        -o-transition: all 150ms ease;
-        transition: all 150ms ease; }
-        header #message a i:hover {
-          -webkit-transform: scale3d(1.5, 1.5, 1.5);
-          transform: scale3d(1.5, 1.5, 1.5);
-          color: gray;
-          -webkit-transition: all 250ms ease;
-          -o-transition: all 250ms ease;
-          transition: all 250ms ease; }
+    opacity: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(25%, rgba(0, 0, 0, 0.75)), color-stop(75%, rgba(0, 0, 0, 0.75)), to(transparent));
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 25%, rgba(0, 0, 0, 0.75) 75%, transparent 100%);
+    background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 25%, rgba(0, 0, 0, 0.75) 75%, transparent 100%);
+    background-image: linear-gradient(-180deg, transparent 0%, rgba(0, 0, 0, 0.75) 25%, rgba(0, 0, 0, 0.75) 75%, transparent 100%);
+    -webkit-transition: opacity 800ms ease;
+    -o-transition: opacity 800ms ease;
+    transition: opacity 800ms ease; }
+    #menu nav a {
+      overflow: hidden;
+      -webkit-transition: -webkit-transform 100ms ease;
+      transition: -webkit-transform 100ms ease;
+      -o-transition: transform 100ms ease;
+      transition: transform 100ms ease;
+      transition: transform 100ms ease, -webkit-transform 100ms ease; }
+      #menu nav a h1 {
+        padding: 0;
+        margin: 16px 0;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        -webkit-transform: translateY(-200px);
+        -ms-transform: translateY(-200px);
+        transform: translateY(-200px);
+        opacity: 0;
+        -webkit-transition: opacity 800ms ease-in 50ms, -webkit-transform 800ms ease-in 50ms;
+        transition: opacity 800ms ease-in 50ms, -webkit-transform 800ms ease-in 50ms;
+        -o-transition: transform 800ms ease-in 50ms, opacity 800ms ease-in 50ms;
+        transition: transform 800ms ease-in 50ms, opacity 800ms ease-in 50ms;
+        transition: transform 800ms ease-in 50ms, opacity 800ms ease-in 50ms, -webkit-transform 800ms ease-in 50ms; }
+      #menu nav a:hover {
+        -webkit-transform: scale3d(1.3, 1.3, 1.3);
+        transform: scale3d(1.3, 1.3, 1.3);
+        -webkit-transition: -webkit-transform 300ms ease;
+        transition: -webkit-transform 300ms ease;
+        -o-transition: transform 300ms ease;
+        transition: transform 300ms ease;
+        transition: transform 300ms ease, -webkit-transform 300ms ease; }
+  #menu.animate {
+    top: 0;
+    -webkit-transition: top 1000ms cubic-bezier(0.54, 0, 0, 1);
+    -o-transition: top 1000ms cubic-bezier(0.54, 0, 0, 1);
+    transition: top 1000ms cubic-bezier(0.54, 0, 0, 1); }
+    #menu.animate:before {
+      top: 0;
+      -webkit-transition: top 1000ms cubic-bezier(0.54, 0, 0, 1) 550ms;
+      -o-transition: top 1000ms cubic-bezier(0.54, 0, 0, 1) 550ms;
+      transition: top 1000ms cubic-bezier(0.54, 0, 0, 1) 550ms; }
+    #menu.animate:after {
+      top: 99.85vh;
+      -webkit-transition: top 1000ms cubic-bezier(0.54, 0, 0, 1);
+      -o-transition: top 1000ms cubic-bezier(0.54, 0, 0, 1);
+      transition: top 1000ms cubic-bezier(0.54, 0, 0, 1); }
+    #menu.animate nav {
+      opacity: 1;
+      -webkit-transition: opacity 1000ms ease 550ms;
+      -o-transition: opacity 1000ms ease 550ms;
+      transition: opacity 1000ms ease 550ms; }
+      #menu.animate nav a h1 {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-transition: opacity 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms, -webkit-transform 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms;
+        transition: opacity 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms, -webkit-transform 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms;
+        -o-transition: transform 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms, opacity 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms;
+        transition: transform 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms, opacity 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms;
+        transition: transform 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms, opacity 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms, -webkit-transform 1000ms cubic-bezier(0.01, 0.64, 0.6, 1.01) 550ms; }
 
-#toggleNav {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  height: 5vh;
-  background-color: #413f41;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: width 350ms ease 0ms, left 350ms ease 0ms, background-color 550ms ease 0ms, height 150ms ease 550ms;
-  -o-transition: width 350ms ease 0ms, left 350ms ease 0ms, background-color 550ms ease 0ms, height 150ms ease 550ms;
-  transition: width 350ms ease 0ms, left 350ms ease 0ms, background-color 550ms ease 0ms, height 150ms ease 550ms; }
-  @media screen and (max-width: 768px) {
-    #toggleNav {
-      height: 7vh; } }
-  #toggleNav.animate {
-    height: 100vh;
-    width: 100%;
-    left: 0;
-    opacity: .95;
-    background-color: black;
-    -webkit-transition: height 350ms ease 0ms, width 550ms ease 350ms, left 550ms ease 350ms, background-color 750ms ease 350ms;
-    -o-transition: height 350ms ease 0ms, width 550ms ease 350ms, left 550ms ease 350ms, background-color 750ms ease 350ms;
-    transition: height 350ms ease 0ms, width 550ms ease 350ms, left 550ms ease 350ms, background-color 750ms ease 350ms; }
-
-nav {
-  opacity: 0;
-  margin-top: 100px;
-  color: white; }
-  nav.animate {
-    opacity: 1;
-    margin-top: 0px;
-    -webkit-transition: opacity 750ms ease 550ms, margin-top 750ms ease 550ms;
-    -o-transition: opacity 750ms ease 550ms, margin-top 750ms ease 550ms;
-    transition: opacity 750ms ease 550ms, margin-top 750ms ease 550ms; }
+body {
+  background-color: #1E1C18;
+  margin: 0;
+  padding: 0; }
 
 header {
   z-index: 100; }
 
-nav {
+#menu {
   z-index: 99; }
 
-img {
-  z-index: 97; }
-
-h1 {
-  font-family: sans-serif;
-  font-size: 3rem;
-  margin: 1rem; }
-
-body {
-  margin: 0;
-  padding: 0; }
-
-.filler {
-  width: 100% auto;
-  height: 768px;
-  overflow: hidden;
+.temp {
+  width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,37 +325,17 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 88px 80px 88px 80px;
-  margin-bottom: 150px; }
-  .filler .project {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    -webkit-box-shadow: 0px 20px 80px grey;
-    box-shadow: 0px 20px 80px grey;
-    z-index: -1;
-    background: url("https://static.pexels.com/photos/722218/pexels-photo-722218.jpeg");
-    background-size: cover;
-    -webkit-transition: -webkit-transform 350ms ease 350ms;
-    transition: -webkit-transform 350ms ease 350ms;
-    -o-transition: transform 350ms ease 350ms;
-    transition: transform 350ms ease 350ms;
-    transition: transform 350ms ease 350ms, -webkit-transform 350ms ease 350ms;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .filler .project.animate {
-      -webkit-transform: scale3d(0.5, 0.5, 0.5);
-      transform: scale3d(0.5, 0.5, 0.5);
-      opacity: .5;
-      -webkit-transition: opacity 350ms ease, -webkit-transform 350ms ease;
-      transition: opacity 350ms ease, -webkit-transform 350ms ease;
-      -o-transition: transform 350ms ease, opacity 350ms ease;
-      transition: transform 350ms ease, opacity 350ms ease;
-      transition: transform 350ms ease, opacity 350ms ease, -webkit-transform 350ms ease; }
+  -webkit-transition: opacity 550ms ease 550ms;
+  -o-transition: opacity 550ms ease 550ms;
+  transition: opacity 550ms ease 550ms; }
+  .temp h1 {
+    color: white;
+    margin-bottom: 10px; }
+  .temp p {
+    color: #4A4A4A;
+    margin: 0; }
+  .temp.animate {
+    opacity: 0;
+    -webkit-transition: opacity 550ms ease;
+    -o-transition: opacity 550ms ease;
+    transition: opacity 550ms ease; }

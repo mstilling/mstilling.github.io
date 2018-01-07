@@ -1,61 +1,55 @@
-$barWidth: 40px;
-$barThickness: 2px;
-$barNormal: #413f41;
-$barAfter: gray;
-$body: White;
-$barSpace: 9px;
+@import url("//hello.myfonts.net/count/357ee9");
 
-@import './partials/header';
-@import './partials/toggleNav';
-
-//z-index
-header { z-index: 100; }
-nav { z-index: 99; }
-img { z-index: 97; }
-
-//text-styles
-h1 {
-  font-family: sans-serif;
-  font-size: 3rem;
-  margin: 1rem;
+@font-face {
+  font-family: 'Harbour-Light';
+  src: url('../fonts/357EE9_0_0.eot');
+  src: url('../fonts/357EE9_0_0.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/357EE9_0_0.woff2') format('woff2'),url('../fonts/357EE9_0_0.woff')
+  format('woff'),url('../fonts/357EE9_0_0.ttf') format('truetype');
 }
 
+$primary: #1E1C18;
+$secondary: black;
+$textPrimary: white;
+$textSecondary: #4A4A4A;
+$linearGradient: linear-gradient(-45deg, #FF9400 0%, #FF00D0 50%, #8900FF 100%);
+$radialGradient: radial-gradient(circle at bottom right, #FF9400, #FF00D0, #8900FF);
+
+@import './partials/textStyles';
+@import './partials/header';
+@import './partials/menu';
+
 body {
+  background-color: $primary;
   margin: 0;
   padding: 0;
 }
 
-//--------------
-.filler {
-  width: 100% auto;
-  height: 768px;
-  overflow: hidden;
+//z-index
+header {z-index: 100;}
+#menu {z-index: 99;}
+
+.temp {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 88px 80px 88px 80px;
-  margin-bottom: 150px;
+  transition: opacity 550ms ease 550ms;
 
+  h1 {
+    color: $textPrimary;
+    margin-bottom: 10px;
+  }
 
-  .project {
-    width:100%;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0px 20px 80px grey;
-    z-index: -1;
-    background: url("https://static.pexels.com/photos/722218/pexels-photo-722218.jpeg");
-    background-size: cover;
-    transition: transform 350ms ease 350ms;
+  p {
+    color: $textSecondary;
+    margin: 0;
+  }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &.animate {
-      transform: scale3d(.5,.5,.5);
-      opacity: .5;
-      transition: transform 350ms ease, opacity 350ms ease;
-    }
+  &.animate {
+    opacity: 0;
+    transition: opacity 550ms ease;
   }
 }

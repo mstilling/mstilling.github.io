@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Layout</title>
-
     <link type="text/css" rel="stylesheet" href="./css/styles.css">
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700" rel="stylesheet">
+
+    <title>Mike Stilling - Digital Designer</title>
 
   </head>
+
   <body>
 
-    <!-- Header -->
+    <!--Header-->
     <header>
 
+      <!-- Logo -->
       <a id="logo" href="#">
-        <?xml version="1.0" encoding="utf-8"?>
-        	<svg version="1.1" id="m" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
-        	 	<style type="text/css">
-        			.st0{}
-        		</style>
-        		<rect id="lastLine" x="33" class="st0" width="7" height="40"/>
-        		<polygon id="thirdLine" class="st0" points="31,1.6 31,21.1 23.8,40 16.3,40 16.3,40 20,30.2 "/>
-        		<polygon id="secondLine" class="st0" points="18.9,27.4 15.2,37.2 9,21.1 9,1.5 "/>
-        		<rect id="firstLine" class="st0" width="7" height="40"/>
-        	</svg>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="44px" height="40px" viewBox="0 0 44 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>Mike Stilling Digital Designer</title>
+            <desc>This is a letter M standing in for a logo.</desc>
+            <defs></defs>
+            <g id="mLogo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-20.000000, -20.000000)">
+                <polygon id="M" points="64 59.9957173 46.5695931 59.9957173 50.5267666 54.7665953 50.5267666 34.8865096 39.6916488 52.0813704 28.5738758 34.6509636 28.5738758 54.7665953 32.5781585 59.9957173 20 59.9957173 23.9571734 54.7665953 23.9571734 28.3383298 20.9892934 25.3704497 29.987152 20 42.6124197 40.0214133 50.4796574 27.490364 46.5695931 22.3083512 64 22.3083512 59.9957173 27.5374732 59.9957173 54.7665953"></polygon>
+            </g>
+        </svg>
       </a>
 
-      <div id="menu">
+      <!-- Menu Button -->
+      <div id="menuButton">
         <div id="menuBar1"></div>
         <div id="menuBar2"></div>
-        <div id="menuBar3"></div>
       </div>
 
-      <div id="message">
-        <a class="social" href="#"><i class="fa fa-envelope-o" aria-hidden="true" id="social"></i></a>
-      </div>
+      <!-- Name -->
+      <a id="myName" href="#">Michael Stilling</a>
 
-      <div id="socialIcons">
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <!-- Social Icons -->
+      <div id="social">
+        <a href="https://www.instagram.com/mikestilling/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://github.com/mstilling" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://codepen.io/mikestilling/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/mikestilling/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="mailto:mike@mikestilling.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
       </div>
 
     </header>
-    <!-- End of Header -->
+    <!--End of Header-->
 
-    <!-- Toggle Menu -->
-    <div id="toggleNav">
+    <!-- Menu -->
+    <div id="menu">
       <nav>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
+        <a href="#"><h1>Home</h1></a>
+        <a href="#"><h1>About</h1></a>
+        <a href="#"><h1>Work</h1></a>
+        <a href="#"><h1>Shared</h1></a>
+        <a href="#"><h1>Connect</h1></a>
       </nav>
     </div>
-    <!-- End Toggle Menu -->
+    <!-- End of Menu -->
 
-    <!-- Page Location -->
-
-    <!-- End Page Location -->
-
-    <div class="filler">
-      <div class="project">Hello.</div>
+    <!-- Temporary -->
+    <div class="temp">
+      <h1>I'm working on it!</h1>
+      <p>I hope to have this site up and running by February.</p>
     </div>
+    <!-- End Temporary -->
 
-    <div class="filler">
-      <div class="project"></div>
-    </div>
 
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./scripts/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script type="text/javascript" src="./scripts/scripts.js"></script>
 
 </html>

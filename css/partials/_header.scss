@@ -2,245 +2,126 @@ header {
   position: fixed;
 
   //logo
-  #logo {
+  a#logo {
     position: fixed;
     top: 20px;
-    left: 20px;
-    transition: transform 150ms ease;
+    left: 18px;
+    padding: 0 2px 4px 2px;
+    overflow: hidden;
 
-    &:hover {
-      transform: scale3d(1.3, 1.3, 1.3);
-      transition: transform 250ms ease;
-
-      svg {
-        fill: $barAfter;
-        transition: all 550ms ease;
-      }
+    #mLogo {
+      fill: $textPrimary;
     }
 
-    svg {
-      width: 40px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      width: 44px;
       height: 40px;
-      fill: $barNormal;
-      transition: fill 250ms ease;
+      background: $radialGradient;
+      background-blend-mode: multiply;
+      z-index: -1;
+      transition: top 300ms cubic-bezier(.63,0,.37,1);
     }
 
-    &.animate {
-      svg {
-        fill: white;
-        transition: fill 250ms ease 600ms;
-      }
+    &:hover:after {
+      top: -100%;
+      transition: top 500ms cubic-bezier(.63,0,.37,1);
+
     }
   }
 
-  //menu icon
-  #menu {
+  //menu button
+  #menuButton {
     position: fixed;
     top: 20px;
     right: 20px;
     width: 40px;
     height: 40px;
-    transition: transform 150ms ease;
     cursor: pointer;
+    overflow: hidden;
 
-    &:hover {
-      transform: scale3d(1.3, 1.3, 1.3);
-      transition: transform 250ms ease;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 80px;
+      background: $radialGradient;
+      background-size: cover;
+      z-index: -1;
+      transform: translateY(40px);
+      transition: transform 300ms cubic-bezier(.63,0,.37,1);
     }
-
-    &.animate {
-      #menuBar1:after,
-      #menuBar2:after,
-      #menuBar3:after {
-        content: "";
-        background-color: white;
-        transition: 0 ease 600ms;
-      }
-
-      #menuBar1:before,
-      #menuBar2:before,
-      #menuBar3:before {
-        content: "";
-        background: black;
-      }
-    }
-
 
     #menuBar1,
-    #menuBar2,
-    #menuBar3, {
+    #menuBar2 {
       position: absolute;
-      left: 4px;
-      width: 32px;
-      height: $barThickness;
-      background-color: $barAfter;
-      margin: 0 auto;
-    }
-
-    #menuBar1:before,
-    #menuBar2:before,
-    #menuBar3:before {
-      content: "";
-      position: absolute;
-      width: 0;
-      background: $body;
-      height: $barThickness;
-      transition: width 150ms ease;
-    }
-
-    #menuBar1:after,
-    #menuBar2:after,
-    #menuBar3:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      background-color: $barNormal;
-      height: $barThickness;
+      width: 24px;
+      height: 2px;
+      margin-left: 8px;
+      margin-right: 8px;
+      background-color: $textPrimary;
     }
 
     #menuBar1 {
-      top: $barSpace;
-      transition: top 100ms ease 200ms,
-                  background-color 150ms ease,
-                  transform 100ms ease;
+        top: 13px;
+        transition: top 250ms ease 250ms, transform 250ms ease;
 
-      &.animate {
-        top: 19px;
-        background-color: white;
-        transform: rotateZ(45deg);
-        transition: top 150ms ease,
-                    background-color 150ms ease,
-                    transform 150ms ease 300ms;
+        &.animate {
+          top: 19px;
+          transform: rotateZ(45deg);
+          transition: top 250ms ease, transform 250ms ease 250ms;
+        }
       }
-    }
 
     #menuBar2 {
-      top: 19px;
-      transition: opacity 100ms ease;
+        bottom: 13px;
+        transition: bottom 250ms ease 250ms, transform 250ms ease;
 
-      &.animate {
-        opacity: 0;
-        transition: opacity 150ms ease;
+        &.animate {
+          bottom: 19px;
+          transform: rotateZ(-45deg);
+          transition: bottom 250ms ease, transform 250ms ease 250ms;
+        }
       }
-    }
+  }
 
-    #menuBar3 {
-      bottom: $barSpace;
-      transition: bottom 100ms ease 200ms,
-                  background-color 150ms ease,
-                  transform 100ms ease;
+  #menuButton:hover:before {
+    transform: translateY(-80px);
+    transition: transform 500ms cubic-bezier(.63,0,.37,1);
+  }
 
-      &.animate {
-        bottom: 19px;
-        background-color: white;
-        transform: rotateZ(-45deg);
-        transition: bottom 150ms ease,
-                    background-color 150ms ease 300ms,
-                    transform 150ms ease 300ms;
-      }
-    }
+  //name
+  a#myName {
+    position: fixed;
+    bottom: 104px;
+    left: -67px;
+    transform: rotateZ(90deg);
 
-    #menuBar1:before { transition: width 150ms ease; }
-    #menuBar2:before { transition: width 150ms ease 50ms; }
-    #menuBar3:before { transition: width 150ms ease 100ms; }
-
-    #menuBar1:after { transition: width 250ms ease 100ms; }
-    #menuBar2:after { transition: width 250ms ease 150ms; }
-    #menuBar3:after { transition: width 250ms ease 200ms; }
-
-    //bar hover animation
-    &:hover {
-      #menuBar1:before { width: 100%; transition: width 150ms ease; }
-      #menuBar2:before { width: 100%; transition: width 150ms ease 50ms; }
-      #menuBar3:before { width: 100%; transition: width 150ms ease 100ms; }
-
-      #menuBar1:after { width: 100%; transition: width 250ms ease 50ms; }
-      #menuBar2:after { width: 100%; transition: width 250ms ease 100ms; }
-      #menuBar3:after { width: 100%; transition: width 250ms ease 150ms; }
-    }
+    font-family: 'Work Sans', sans-serif;
+    font-size: .8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   //social icons
-  #socialIcons {
+  #social {
     position: fixed;
-    right: 20px;
     bottom: 20px;
-    width: 40px;
-    height: auto;
-
+    right: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 
     a {
-      text-decoration: none;
-      color: $barNormal;
+      color: $textPrimary;
+      margin: 10px 0;
+      transition: transform 150ms ease;
 
-      i {
-        display: block;
-        text-align: center;
-        padding: 10px 10px;
-        margin: 5px 0;
-        border-radius: 150px;
-        transition: all 150ms ease;
-
-        &:first-child {
-          margin-top: 0;
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        &:hover {
-          transform: scale3d(1.5, 1.5, 1.5);
-          color: $barAfter;
-          transition: all 250ms ease;
-        }
-      }
-    }
-
-    i {
-      display: block;
-      text-align: center;
-      padding: 10px 10px;
-      margin: 5px 0;
-      border-radius: 150px;
-      color: $barNormal;
-
-      &:first-child {
-        margin-top: 0;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  //message
-  #message {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 40px;
-    color:white;
-
-    a {
-      text-decoration: none;
-      i {
-        display: block;
-        text-align: center;
-        padding: 10px 10px;
-        border-radius: 150px;
-        color: $barNormal;
-        transition: all 150ms ease;
-
-        &:hover {
-          transform: scale3d(1.5, 1.5, 1.5);
-          color: $barAfter;
-          transition: all 250ms ease;
-        }
+      &:hover {
+        transform: scale3d(2,2,2);
+        transition: transform 250ms ease;
       }
     }
   }
