@@ -327,13 +327,20 @@ header {
   align-items: center;
   -webkit-transition: opacity 550ms ease 550ms;
   -o-transition: opacity 550ms ease 550ms;
-  transition: opacity 550ms ease 550ms; }
+  transition: opacity 550ms ease 550ms;
+  text-align: center; }
   .temp h1 {
     color: white;
     margin-bottom: 10px; }
+    @media screen and (max-width: 640px) {
+      .temp h1 {
+        font-size: 1.5rem; } }
   .temp p {
     color: #4A4A4A;
     margin: 0; }
+    @media screen and (max-width: 640px) {
+      .temp p {
+        font-size: 12px; } }
   .temp.animate {
     opacity: 0;
     -webkit-transition: opacity 550ms ease;

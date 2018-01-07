@@ -37,15 +37,23 @@ header {z-index: 100;}
   justify-content: center;
   align-items: center;
   transition: opacity 550ms ease 550ms;
+  text-align: center;
 
   h1 {
     color: $textPrimary;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1.5rem;
+    }
   }
 
   p {
     color: $textSecondary;
     margin: 0;
+    @media screen and (max-width: 640px) {
+      font-size: 12px;
+    }
   }
 
   &.animate {
