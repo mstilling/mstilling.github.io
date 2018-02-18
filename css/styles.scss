@@ -12,8 +12,9 @@ $primary: #1E1C18;
 $secondary: black;
 $textPrimary: white;
 $textSecondary: #4A4A4A;
-$linearGradient: linear-gradient(-45deg, #FF9400 0%, #FF00D0 50%, #8900FF 100%);
-$radialGradient: radial-gradient(circle at bottom right, #FF9400, #FF00D0, #8900FF);
+$highlighter: #00FFCE;
+$linearGradient: linear-gradient(-45deg, #FC8CFF 0%, #E90000 50%, #7C00FF 100%);
+$radialGradient: radial-gradient(circle at bottom right, #FC8CFF, #E90000, #7C00FF);
 
 @import './partials/textStyles';
 @import './partials/header';
@@ -29,35 +30,15 @@ body {
 header {z-index: 100;}
 #menu {z-index: 99;}
 
-.temp {
+.tempDesktop {
   width: 100%;
   height: 100vh;
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: opacity 550ms ease 550ms;
-  text-align: center;
 
-  h1 {
-    color: $textPrimary;
-    margin-bottom: 10px;
-
-    @media screen and (max-width: 640px) {
-      font-size: 1.5rem;
-    }
-  }
-
-  p {
-    color: $textSecondary;
-    margin: 0;
-    @media screen and (max-width: 640px) {
-      font-size: 12px;
-    }
-  }
-
-  &.animate {
-    opacity: 0;
-    transition: opacity 550ms ease;
+  video {
+    height: 100vh;
   }
 }
