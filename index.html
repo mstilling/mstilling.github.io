@@ -2,20 +2,31 @@
 <html>
   <head>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112828540-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112828540-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mike Stilling is a Southeastern Wisconsin based designer focused on helping brands grow. Services include: branding, website design, social media, digital advertising, video production, motion graphics, and print design. Let's make your company stand out."/>
 
     <!-- Favicon -->
     <link rel="icon" href="./assets/img/favicon.ico">
 
     <!-- Stylesheet -->
-    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/styles.css">
 
     <!-- Font Awesome 5 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
     <!-- Animate On Scroll -->
-    <link type="text/css" rel="stylesheet" href="./css/aos/aos.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/aos/aos.css">
 
     <title>Mike Stilling - Designer</title>
 
@@ -26,147 +37,175 @@
     <!-- Header -->
     <header>
 
-      <!-- M Icon -->
-      <a href="#" id="logo" data-aos="fade-right">
-        <svg width="24" height="21" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.315 20.571H14.35l2.033-2.689V7.657l-5.57 8.844-5.719-8.965v10.346l2.06 2.69H.685l2.035-2.69V4.288L1.194 2.762 5.83 0l6.504 10.297 4.05-6.443-2.033-2.665h8.964l-2.059 2.689v14.004z"/>
+      <!-- Logo Icon -->
+      <a href="#top ">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+          <path id="m" d="M37.2 36H26.7l2.4-3.1v-12l-6.5 10.3-6.7-10.5v12.1l2.4 3.1h-7.5l2.4-3.1V17l-1.8-1.8 5.4-3.2 7.6 12 4.7-7.5-2.4-3.1h10.5l-2.4 3.1v16.3l2.4 3.2z"/>
         </svg>
       </a>
 
-      <!-- Name -->
-      <h4 id="headerName" data-aos="fade-down">Mike Stilling</h4>
+      <!-- Info Button -->
+      <svg id="info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+        <circle id="infoCircle" cx="24" cy="24" r="12"/>
+        <path id="infoI" d="M27.7 32h-7.4l1.7-2.2v-4.6l-1.3-1.3 5.3-3.1v9l1.7 2.2zM26 19.1h-4V16h4v3.1z"/>
+        <path id="infoRect1" d="M22 16h4v16h-4z" transform='rotate(45 24 24)'/>
+        <path id="infoRect2" d="M22 16h4v16h-4z" transform='rotate(135 24 24)'/>
+      </svg>
 
-      <!-- Menu Icon -->
-      <div id="menu" data-aos="fade-left">
-        <h4 id="menuText">Menu</h4>
-        <div id="menuButton">
-          <div id="menuBarTop"></div>
-          <div id="menuBarBottom"></div>
+      <!-- Name Tag -->
+      <p id="nameTag">Mike Stilling</p>
+
+      <!-- Arrow -->
+      <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 136">
+        <path id="arrow-shaft" class="st0" d="M23 0h2v126h-2V0z"/>
+        <path id="arrow-head" class="st0" d="M33 120l-8 16-10-16h18z"/>
+      </svg>
+
+      <!-- Social Icons -->
+      <div id="socialIcons">
+        <a href="https://www.instagram.com/mikestilling/"><i class="fab fa-instagram"></i></a>
+        <a href="https://vimeo.com/mikestilling"><i class="fab fa-vimeo-v"></i></a>
+        <a href="https://www.linkedin.com/in/mikestilling/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+    </header>
+
+    <!-- Info Toggle -->
+    <div id="infoToggle">
+      <div id="infoContent">
+        <a href="mailto:mike@mikestilling.com" target="_top"> mike@mikestilling.com </a>
+      </div>
+    </div>
+
+    <!-- Content Start -->
+    <div class="wrapper">
+      <a name="top"></a>
+
+      <!-- Hero -->
+      <div class="section" id=hero>
+
+        <video id="heroVideo" playsinline autoplay loop muted>
+          <source src="https://player.vimeo.com/external/263731840.hd.mp4?s=67e5c4b269dc2b35f187960da19dddbff2b84090&profile_id=174" type="video/mp4">
+        </video>
+
+        <div class="sectionCenterText" id="heroText" data-aos="fade-up" data-aos-duration="2000">
+          <h1> Modern, Simple, and Memorable. </h1>
+        </div>
+
+        <a href="#mission" class="btn" data-aos="fade-up" data-aos-anchor="#heroText" data-aos-delay="2000" data-aos-duration="1000">Learn More</a>
+      </div>
+
+      <!-- Mission -->
+      <div class="section" id=mission>
+        <img src="./assets/img/ms_burst_astronaut.png" alt="bursting smoke with astronaut" data-aos="fade-up" data-aos-offset="-40" data-aos-duration="750">
+        <div class="sectionLeftText">
+          <h1 class="sectionTitle" data-aos="fade-right" data-aos-duration="750"> Mission </h1>
+          <div class="thinLine" data-aos="zoom-in" data-aos-duration="750"></div>
+          <p class="sectionBody" data-aos="fade-left" data-aos-duration="750">I design modern creative solutions that help companies stand out. As an independent studio, I stay sharp by knowing the most up-to-date technologies. With the ability to create just about anything, I focus on translating a company’s passion into a well-crafted visual message that gets peoples attention.</p>
+          <a href="#workDelta" class="btn" data-aos="zoom-in" data-aos-offset="-40" data-aos-duration="750">View Work</a>
         </div>
       </div>
 
-      <!-- Designer -->
-      <h4 id="designer" data-aos="fade-right" data-aos-anchor-placement="top-bottom">Designer</h4>
-
-      <!-- Social -->
-      <div id="socialNav" data-aos="fade-left">
-        <a href="https://vimeo.com/mikestilling" target="_blank"><i class="fab fa-vimeo-v"></i></a>
-        <a href="https://www.behance.net/mikestilling" target="_blank"><i class="fab fa-behance"></i></a>
-        <a href="https://www.instagram.com/mikestilling/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:mike@mikestilling" target="_top"><i class="far fa-envelope"></i></a>
+      <!-- Delta -->
+      <div class="section work" id="workDelta">
+        <div class="project" data-aos="fade-up" data-aos-offset="-40" data-aos-duration="750">
+          <img src="./assets/img/delta_thumbnail_1280x720_150dpi.jpg" alt="Delta App Design"/>
+          <div class="projectText">
+            <h1 data-aos="fade-up" data-aos-duration="750">Delta App</h1>
+            <a class="projectBtn" href="delta.html" data-aos="fade-up" data-aos-duration="750"> View Project </a>
+          </div>
+        </div>
       </div>
 
-
-    </header>
-    <!-- End of Header -->
-
-    <!-- Hero -->
-    <a name="top"></a>
-    <div class="hero" id="landingPage">
-
-      <svg id="wip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 804.3 258.3">
-        <defs>
-          <linearGradient id="wipGradient">
-          <stop offset="5%" stop-color="#FC8CFF" />
-          <stop offset="50%" stop-color="#E90000" />
-          <stop offset="95%" stop-color="#7C00FF" />
-        </linearGradient>
-        </defs>
-          <path d="M355.9 15.4L331.7 47l-94.6 209.8-61.6-128.6-58.2 128.6-96.9-202-20-20.2L55.7 1.5l75.8 158.2L160 96.4l-20-41.6-20-20.2 55.3-33.1 75.8 158.2 50.7-112.6-23.9-31.6h78zM371.9 243.5h-57.3v-55.6h57.3v55.6zM503.3 243.5H397.8l23.9-31.6V47.1l-23.9-31.6h105.5L479 47.1v164.8l24.3 31.6zM586.3 243.5H529v-55.6h57.3v55.6zM803.9 84.7c0 16.7-6.8 31-20.5 42.8-14.6 12.5-35.7 20.7-63.3 24.5l-26.5 3.7v56.2l24.2 31.6H612.3l23.9-31.6V47.1l-23.9-31.6h106.6c24.9 0 45.5 7.1 61.9 21.4 15.4 13.4 23.1 29.4 23.1 47.8zm-55.6 22.2c0-14.6-5.4-28-16.1-40.2-10.7-12.2-23.6-19.5-38.6-22v68.4l47.6 19.7c4.7-8.1 7.1-16.7 7.1-25.9z" fill="url(#wipGradient)"/>
-      </svg>
-
-      <a href="#project1" class="btn"> View Work </a>
-
-    </div>
-
-    <!-- Project 1 Delta -->
-    <div class="projectThumb" id="project1">
-      <a name="project1"></a>
-
-      <!-- Previous Text -->
-      <a href="#top" class="previous" data-aos="fade-up" data-aos-offset="-40px" data-aos-duration="200">Previous</a>
-
-      <!-- Project Image -->
-      <div class="projectThumbImg" id="project1Thumb"></div>
-
-      <!-- Project Text -->
-      <div class="projectThumbText">
-        <h2 class="projectThumbTitle" data-aos="fade-up"> Delta App </h2>
-        <a href="./delta.html" class="projectThumbBtn" data-aos="fade-up"> View Project </a>
+      <!-- MillerCoors -->
+      <div class="section work" id="workMillerCoors">
+        <div class="project" data-aos="fade-up" data-aos-offset="-40" data-aos-duration="750">
+          <img src="./assets/img/millerlite_thumb_1280x720_150dpi.jpg" alt="MillerCoors Motion Graphics"/>
+          <div class="projectText">
+            <h1 data-aos="fade-up" data-aos-duration="750">MillerCoors</h1>
+            <a class="projectBtn" href="millercoors.html" data-aos="fade-up" data-aos-duration="750"> View Project </a>
+          </div>
+        </div>
       </div>
 
-      <!-- Next Text -->
-      <a href="#project2" class="next" data-aos="fade-up" data-aos-offset="-40px" data-aos-duration="200">Next Project</a>
-
-    </div>
-
-    <!-- Project 2 MillerCoors -->
-    <div class="projectThumb" id="project2">
-      <a name="project2"></a>
-
-      <!-- Previous Text -->
-      <a href="#project1" class="previous" data-aos="fade-up" data-aos-offset="-40px" data-aos-duration="200">Previous</a>
-
-      <!-- Project Image -->
-      <div class="projectThumbImg" id="project2Thumb"></div>
-
-      <!-- Project Text -->
-      <div class="projectThumbText">
-        <h2 class="projectThumbTitle" data-aos="fade-up"> Miller<br>Coors </h2>
-        <a href="./millercoors.html" class="projectThumbBtn" data-aos="fade-up"> View Project </a>
+      <!-- Sprecher -->
+      <div class="section work" id="workSprecher">
+        <div class="project" data-aos="fade-up" data-aos-offset="-40" data-aos-duration="750">
+          <img src="./assets/img/sprecher_thumb_1280x720_150dpi.jpg" alt="Sprecher Re-Design"/>
+          <div class="projectText">
+            <h1 data-aos="fade-up" data-aos-duration="750">Sprecher</h1>
+            <a class="projectBtn" href="sprecher.html" data-aos="fade-up" data-aos-duration="750"> View Project </a>
+          </div>
+        </div>
       </div>
 
-      <!-- Next Text -->
-      <a href="#project3" class="next" data-aos="fade-up" data-aos-offset="-40px" data-aos-duration="200">Next Project</a>
-
-    </div>
-
-    <!-- Project 3 Sprecher -->
-    <div class="projectThumb" id="project3">
-      <a name="project3"></a>
-
-      <!-- Previous Text -->
-      <a href="#project2" class="previous" data-aos="fade-up" data-aos-offset="-40px" data-aos-duration="200">Previous</a>
-
-      <!-- Project Image -->
-      <div class="projectThumbImg" id="project3Thumb"></div>
-
-      <!-- Project Text -->
-      <div class="projectThumbText">
-        <h2 class="projectThumbTitle" data-aos="fade-up"> Sprecher </h2>
-        <a href="./sprecher.html" class="projectThumbBtn" data-aos="fade-up"> View Project </a>
+      <!-- Resize Studio -->
+      <div class="section work" id="workResize">
+        <div class="project" data-aos="fade-up" data-aos-offset="-40" data-aos-duration="750">
+          <img src="./assets/img/resize-studio/resize-studio_thumbnail_1280x720_150dpi.jpg" alt="Sprecher Re-Design"/>
+          <div class="projectText">
+            <h1 data-aos="fade-up" data-aos-duration="750">Resize.Studio</h1>
+            <a class="projectBtn" href="resize-studio.html" data-aos="fade-up" data-aos-duration="750"> View Project </a>
+          </div>
+        </div>
       </div>
 
-      <!-- Next Text -->
-      <a href="#project4" class="next" data-aos="fade-up" data-aos-offset="-40px" data-aos-duration="200">Next Project</a>
-
-    </div>
-
-    <!-- Project 4 Resize Studio -->
-    <div class="projectThumb" id="project4">
-      <a name="project4"></a>
-
-      <!-- Previous Text -->
-      <a href="#project3" class="previous" data-aos="fade-up" data-aos-offset="-40px" data-aos-duration="200">Previous</a>
-
-      <!-- Project Image -->
-      <div class="projectThumbImg" id="project4Thumb"></div>
-
-      <!-- Project Text -->
-      <div class="projectThumbText">
-        <h2 class="projectThumbTitle" data-aos="fade-up"> Resize <br> Studio </h2>
-        <a href="./resize-studio.html" class="projectThumbBtn" data-aos="fade-up"> View Project </a>
+      <!-- About -->
+      <div class="section" id="about">
+        <img src="./assets/img/ms_burst_profile.png" alt="mike stilling" data-aos="fade-up" data-aos-offset="-40" data-aos-duration="750">
+        <div class="sectionLeftText">
+          <h1 class="sectionTitle" data-aos="fade-left" data-aos-duration="750"> About </h1>
+          <div class="thinLine" data-aos="zoom-in" data-aos-duration="750"></div>
+          <p class="sectionBody" data-aos="fade-right" data-aos-duration="750">I began my career at agencies working with some of Wisconsin’s most notable brands, such as Miller Lite and Culver’s. While it was a great experience, I always have been attracted to starting my own practice. Operating as an independent studio has been one of the scariest but most rewarding experiences that I have ever pursued. Everyday I look forward to putting out the best possible design and creative for my clients.</p>
+          <a href="#contact" class="btn" data-aos="zoom-in" data-aos-offset="-40" data-aos-duration="750">Get In Touch</a>
+        </div>
       </div>
 
-      <!-- Next Text
-      <a href="#project5" class="next" data-aos="fade-up" data-aos-offset="-40px" data-aos-duration="200">Next Project</a> -->
+      <!-- Talents -->
+      <div class="section" id="talents">
+        <img src="./assets/img/ms_burst_phone.png" alt="phone with bursting clouds" data-aos="fade-up" data-aos-offset="-40" data-aos-duration="750">
+        <div class="sectionLeftText">
+          <h1 class="sectionTitle" data-aos="fade-right" data-aos-duration="750"> Talents </h1>
+          <div class="thinLine" data-aos="zoom-in" data-aos-duration="750"></div>
+            <ul>
+              <li data-aos="fade-right"> Branding and Visual Identities </li>
+              <li data-aos="fade-left"> Web Design and Development </li>
+              <li data-aos="fade-right"> Digital and Social Campaigns </li>
+              <li data-aos="fade-left"> Print and Out of Home Campaigns </li>
+              <li data-aos="fade-right"> Video Editing and Motion Graphics </li>
+              <li data-aos="fade-left"> Display and Point of Sale Production </li>
+              <li data-aos="fade-right"> UI Design and Interactive Prototyping </li>
+              <li data-aos="fade-left"> Digital Product Design </li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="section" id="contact">
+        <div class="sectionCenterText" data-aos="fade-up" data-aos-offset="-40" data-aos-duration="750">
+          <h1>Ready to Start <br> a Project?</h1>
+          <div class="thinLine"></div>
+          <p>
+            I'd love to help. E-mail me at: <br>
+            <a href="mailto:mike@mikestilling.com" target="_top">mike@mikestilling.com</a> <br>
+            Call or text at:<br>
+            <a href="tel:+1-262-903-406">(262) 903-9406</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <a href="#top" class="btn">Back to Top</a>
+        <p>Coded with &#10084; By Mike Stilling </p>
+      </footer>
 
     </div>
+    <!-- Content End -->
 
+    <script type="text/javascript" src="./assets/scripts/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/scripts.js"></script>
   </body>
-
-  <script type="text/javascript" src="./scripts/aos.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./scripts/jQuery.js"></script>
 
 </html>

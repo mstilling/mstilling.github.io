@@ -1,0 +1,40 @@
+#infoToggle {
+  z-index: 96;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $tertiary;
+
+  transform: translateX(80px);
+  transition: transform 200ms cubic-bezier(.56,0,.19,1) 0ms;
+
+  &.active {
+    transform: translateX(0px);
+    transition: transform 300ms cubic-bezier(.56,0,.19,1) 0ms;
+  }
+
+  #infoContent {
+    transform: rotateZ(90deg);
+
+    a {
+      display: inline;
+      margin-top: 0;
+      margin-bottom: 24px;
+      text-align: center;
+      font-family: 'Work Sans', sans-serif;
+      color: $mainColor;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.projectPage {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  @media only screen and (max-width: 768px) {padding-top: 0;}
+
+  background-image: url("../img/dot.svg");
+  background-size: 54px;
+  background-repeat: repeat;
+  background-color: $secondary;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  overflow: hidden;
+
+  //desktop image
+  .projectImgD {
+    width: 76%;
+    height: auto;
+    margin: 20px 0;
+    @media only screen and (max-width: 1024px) {display: none;}
+  }
+
+  //tablet image
+  .projectImgT {
+    display: none;
+    width: 76%;
+    height: auto;
+    margin: 20px 0;
+    @media only screen and (min-width: 540px) and (max-width: 1024px){display: block;}
+  }
+
+  // mobile image
+  .projectImgM {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+    @media only screen and (max-width: 540px) {display: block;}
+  }
+
+  // project information
+  .projectInfo {
+    width: 403px;
+    margin: 20px 0;
+    text-align: center;
+    h1{margin: 0;}
+    p{margin: 0;}
+    @media only screen and (max-width: 540px) {width: 270px;}
+  }
+
+  //project video
+  .projectVideo {
+    width: 76%;
+    margin: 20px 0;
+    @media only screen and (max-width: 540px) {width: 100%;}
+  }
+
+  //two column project grid
+  .projectTwoColGrid {
+    width: 76%;
+    height: auto;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-around;
+
+    img {
+      width: 48%;
+      margin: 10px 0 10px 0;
+      @media only screen and (max-width: 768px) {width: 90%;}
+    }
+  }
+}

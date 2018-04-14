@@ -1,0 +1,117 @@
+header {
+
+  #logo {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    width: 48px;
+    height: 48px;
+    fill: $secondary;
+    mix-blend-mode: difference;
+    z-index: 100;
+  }
+
+  #info {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    width: 48px;
+    height: 48px;
+    mix-blend-mode: difference;
+    cursor: pointer;
+    z-index: 100;
+
+    #infoCircle {fill: $secondary;}
+
+    #infoI {
+      fill:$mainColor;
+    }
+
+    #infoRect1,
+    #infoRect2 {
+      fill:$mainColor;
+      opacity: 0;
+    }
+
+    &.active {
+
+      #infoI {;
+        opacity: 0;
+        transition: opacity 250ms ease;
+      }
+
+      #infoRect1,
+      #infoRect2 {
+        opacity: 1;
+        transition: opacity 250ms ease;
+      }
+    }
+  }
+
+  #nameTag {
+    position: fixed;
+    top: 50%;
+    left: -32px;
+    width: 136px;
+    transform: rotateZ(90deg);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: $secondary;
+    mix-blend-mode: difference;
+    z-index: 100;
+
+    @media only screen and (max-width: 640px) {
+      position: absolute;
+      top: 21px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transform: rotateZ(0deg);
+    }
+  }
+
+  #arrow {
+    position: fixed;
+    bottom: 24px;
+    left: 12px;
+    width: 48px;
+    height: 68px;
+    fill: $secondary;
+    mix-blend-mode: difference;
+    z-index: 97;
+
+    #arrow-shaft {animation: arrowShaft 1500ms ease 0ms alternate infinite;}
+
+    /*@media only screen and (max-width: 640px) {
+      position: absolute;
+    }*/
+  }
+
+  #socialIcons {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    width: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    mix-blend-mode: difference;
+    z-index: 97;
+
+    a i {
+      color: $secondary;
+      padding: 12px;
+    }
+
+    /*@media only screen and (max-width: 640px) {
+      position: absolute;
+    }*/
+  }
+}
+
+@keyframes arrowShaft {
+  0% {transform: translateY(0)}
+  100% {transform: translateY(120px)}
+}

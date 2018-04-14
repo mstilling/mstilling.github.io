@@ -2,22 +2,33 @@
 <html>
   <head>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112828540-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112828540-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This project features a re-design of the current Delta Airlines Mobile Application. This project was completed by Mike Stilling. Tools used: Sketch App, Flinto, After Effects, Photoshop, Illustrator."/>
 
     <!-- Favicon -->
     <link rel="icon" href="./assets/img/favicon.ico">
 
     <!-- Stylesheet -->
-    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/styles.css">
 
     <!-- Font Awesome 5 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
     <!-- Animate On Scroll -->
-    <link type="text/css" rel="stylesheet" href="./css/aos/aos.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/aos/aos.css">
 
-    <title>Mike Stilling - Delta App</title>
+    <title>Delta Mobile App - Mike Stilling</title>
 
   </head>
 
@@ -26,83 +37,98 @@
     <!-- Header -->
     <header>
 
-      <!-- M Icon -->
-      <a href="./index.html" id="logo">
-        <svg width="24" height="21" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.315 20.571H14.35l2.033-2.689V7.657l-5.57 8.844-5.719-8.965v10.346l2.06 2.69H.685l2.035-2.69V4.288L1.194 2.762 5.83 0l6.504 10.297 4.05-6.443-2.033-2.665h8.964l-2.059 2.689v14.004z"/>
+      <!-- Logo Icon -->
+      <a href="index.html ">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+          <path id="m" d="M37.2 36H26.7l2.4-3.1v-12l-6.5 10.3-6.7-10.5v12.1l2.4 3.1h-7.5l2.4-3.1V17l-1.8-1.8 5.4-3.2 7.6 12 4.7-7.5-2.4-3.1h10.5l-2.4 3.1v16.3l2.4 3.2z"/>
         </svg>
       </a>
 
-      <!-- Name -->
-      <h4 id="headerName">Delta App</h4>
+      <!-- Info Button -->
+      <svg id="info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+        <circle id="infoCircle" cx="24" cy="24" r="12"/>
+        <path id="infoI" d="M27.7 32h-7.4l1.7-2.2v-4.6l-1.3-1.3 5.3-3.1v9l1.7 2.2zM26 19.1h-4V16h4v3.1z"/>
+        <path id="infoRect1" d="M22 16h4v16h-4z" transform='rotate(45 24 24)'/>
+        <path id="infoRect2" d="M22 16h4v16h-4z" transform='rotate(135 24 24)'/>
+      </svg>
 
-      <!-- Menu Icon -->
-      <div id="menu">
-        <h4 id="menuText">Menu</h4>
-        <div id="menuButton">
-          <div id="menuBarTop"></div>
-          <div id="menuBarBottom"></div>
-        </div>
+      <!-- Name Tag -->
+      <p id="nameTag">Mike Stilling</p>
+
+      <!-- Arrow -->
+      <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 136">
+        <path id="arrow-shaft" class="st0" d="M23 0h2v126h-2V0z"/>
+        <path id="arrow-head" class="st0" d="M33 120l-8 16-10-16h18z"/>
+      </svg>
+
+      <!-- Social Icons -->
+      <div id="socialIcons">
+        <a href="https://www.instagram.com/mikestilling/"><i class="fab fa-instagram"></i></a>
+        <a href="https://vimeo.com/mikestilling"><i class="fab fa-vimeo-v"></i></a>
+        <a href="https://www.linkedin.com/in/mikestilling/"><i class="fab fa-linkedin-in"></i></a>
       </div>
-
-      <!-- Designer -->
-      <h4 id="designer">Designer</h4>
-
-      <!-- Social -->
-      <div id="socialNav">
-        <a href="https://vimeo.com/mikestilling" target="_blank"><i class="fab fa-vimeo-v"></i></a>
-        <a href="https://www.behance.net/mikestilling" target="_blank"><i class="fab fa-behance"></i></a>
-        <a href="https://www.instagram.com/mikestilling/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:mike@mikestilling" target="_top"><i class="far fa-envelope"></i></a>
-      </div>
-
 
     </header>
 
-    <!-- Scroll Text -->
-    <div class="scroll">
-      <h4> Scroll Plz </h4>
+    <!-- Info Toggle -->
+    <div id="infoToggle">
+      <div id="infoContent">
+        <a href="mailto:mike@mikestilling.com" target="_top"> mike@mikestilling.com </a>
+      </div>
     </div>
 
-    <!-- Image 1 -->
-    <div class="projectImg" id="deltaProjectHeroImg">
-      <img src="./assets/img/delta/dl_hero_1.jpg" alt="iPhones peaking through clouds with delta app">
+    <!-- Content Start -->
+    <div class="wrapper">
+      <a name="top"></a>
+
+      <div class="projectPage">
+
+        <!-- Image One -->
+        <img class="projectImgD" src="./assets/img/delta/delta_hero_1280x720_150dpi.jpg" alt="Delta Mobile App Re-design"/>
+        <img class="projectImgT" src="./assets/img/delta/delta_hero_720x720_150dpi.jpg" alt="Delta Mobile App Re-design"/>
+        <img class="projectImgM" src="./assets/img/delta/delta_hero_405x720_150dpi.jpg" alt="Delta Mobile App Re-design"/>
+
+        <!-- Project Info -->
+        <div class="projectInfo">
+          <h1>Delta App</h1>
+          <p>For this project, I used various tools to re-design the current Delta App. The end product is a highly functioning, interactive Flinto prototype.</p>
+        </div>
+
+        <!-- Video -->
+        <video class="projectVideo" playsinline autoplay loop muted>
+          <source src="https://player.vimeo.com/external/258787682.hd.mp4?s=f820f73aec0ecd9779156749e5077ebb7db6bdf6&profile_id=174" type="video/mp4">
+        </video>
+
+        <!-- Gifs -->
+        <div class="projectTwoColGrid">
+          <img src="./assets/img/delta/dl_action_interaction.gif" alt="mobile app interaction"/>
+          <img src="./assets/img/delta/dl_click_interactions.gif" alt="mobile app interaction"/>
+          <img src="./assets/img/delta/dl_confirm_interaction.gif" alt="mobile app interaction"/>
+          <img src="./assets/img/delta/dl_menu_interaction.gif" alt="mobile app interaction"/>
+          <img src="./assets/img/delta/dl_route_interaction.gif" alt="mobile app interaction"/>
+          <img src="./assets/img/delta/dl_search_interaction.gif" alt="mobile app interaction"/>
+        </div>
+
+        <!-- Image One -->
+        <img class="projectImgD" src="./assets/img/delta/delta_phones_1280x720_150dpi.jpg" alt="Delta Mobile App Re-design"/>
+        <img class="projectImgT" src="./assets/img/delta/delta_phones_720x720_150dpi.jpg" alt="Delta Mobile App Re-design"/>
+        <img class="projectImgM" src="./assets/img/delta/delta_phones_405x720_150dpi.jpg" alt="Delta Mobile App Re-design"/>
+
+
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <a href="index.html#workDelta" class="btn btnBack">Previous Page</a>
+        <p>Coded with &#10084; By Mike Stilling </p>
+      </footer>
+
     </div>
+    <!-- Content End -->
 
-    <!-- Project Info -->
-    <div class="projectInfo">
-      <h3> Delta App ReDesign </h3>
-      <p> For this project, I used various tools to re-design the current Delta App. The end product is a highly functioning, interactive Flinto prototype.</p>
-    </div>
-
-    <!-- Image 2 -->
-    <div class="projectImg">
-      <video autoplay playsinline onclick="this.play()">
-        <source type="video/mp4" src="https://player.vimeo.com/external/258787682.hd.mp4?s=f820f73aec0ecd9779156749e5077ebb7db6bdf6&profile_id=174">
-      </video>
-    </div>
-
-    <!-- Image Grid -->
-    <div class="projectImgGrid">
-      <img src="./assets/img/delta/dl_menu_interaction.gif" alt="Delta App Menu Interaction" data-aos="fade-up">
-      <img src="./assets/img/delta/dl_action_interaction.gif" alt="Delta App Action Interactions" data-aos="fade-up">
-      <img src="./assets/img/delta/dl_click_interactions.gif" alt="Delta App Click Interactions" data-aos="fade-up">
-      <img src="./assets/img/delta/dl_search_interaction.gif" alt="Delta App Search Interactions" data-aos="fade-up">
-      <img src="./assets/img/delta/dl_confirm_interaction.gif" alt="Delta App Confirm Interactions" data-aos="fade-up">
-      <img src="./assets/img/delta/dl_route_interaction.gif" alt="Delta App Route Interactions" data-aos="fade-up">
-    </div>
-
-    <!-- Image 4 -->
-    <div class="projectImg" id="deltaProjectHeroImg">
-      <img src="./assets/img/delta/dl_screens.jpg" alt="iPhones peaking through clouds with delta app">
-    </div>
-
-    <a id="backToHome" href="./index.html#project1"> Back to Home</a>
-
+    <script type="text/javascript" src="./assets/scripts/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/scripts.js"></script>
   </body>
-
-  <script type="text/javascript" src="./scripts/aos.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./scripts/jQuery.js"></script>
 
 </html>

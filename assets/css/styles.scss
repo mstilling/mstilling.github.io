@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500|Work+Sans:300,400,600');
+
+$mainColor: #16151B;
+$secondary: #fff;
+$tertiary: #9B9B9B;
+$highlight: #00FFCE;
+$highlight2: #7C00FF;
+
+@import './partials/header';
+@import './partials/infoToggle';
+@import './partials/projectPage';
+
+//Structural
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+a {text-decoration: none; outline: none;}
+
+.caps{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/dot.svg");
+  background-size: 54px;
+  background-repeat: repeat;
+  box-sizing: border-box;
+  padding: 60px 80px;
+  text-decoration: none;
+  outline: none;
+  @media only screen and (max-width: 520px) {padding: 80px 60px;}
+}
+
+.sectionCenterText,
+.sectionLeftText {
+  width: 403px;
+  @media only screen and (max-width: 520px) {width: 260px;}
+}
+
+.sectionCenterText {
+  text-align: center;
+}
+
+.sectionLeftText {
+  text-align: left;
+}
+
+h1.sectionTitle {
+  margin: 0;
+  display: inline-block;
+}
+
+.thinLine {
+  height: 1px;
+  background-color: $tertiary;
+}
+
+p.sectionBody {
+  margin: 12px 0 32px 0;
+  letter-spacing: .4px;
+}
+
+.btn {
+  background-color: $highlight;
+  padding: 12px 32px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $mainColor;
+
+  &:hover {
+    background-color: $highlight2;
+    color: $secondary;
+  }
+}
+
+//Sections
+
+#hero {
+  position: relative;
+  background-color: transparent;
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  #heroVideo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transition: all 350ms ease;
+    z-index: -100;
+  }
+
+  h1 {
+    color: $secondary;
+    display: block;
+    margin: 16px auto 0 auto;
+  }
+
+  a.btn {
+    position: absolute;
+    bottom: 48px;
+    @media only screen and (max-width: 640px) {bottom: 24px;}
+  }
+}
+
+#mission {
+  background-color: $secondary;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  img {
+    width: 65%;
+    margin-right: -204px;
+  }
+
+  .thinLine {width: 164px;}
+
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    img {width: 150%; margin-right: 0;}
+  }
+}
+
+.work {
+  background-color: $secondary;
+  @media only screen and (max-width: 640px) {padding: 0;}
+
+  .project {
+    position: relative;
+    background-color: $tertiary;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0,0,0,.2);
+    @media only screen and (max-width: 640px) {box-shadow: 0 0 0 rgba(0,0,0,0);}
+
+    img {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+
+    .projectText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 403px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      h1 {color: $secondary; margin: 0;}
+      @media only screen and (max-width: 640px) {width: 260px;}
+    }
+
+    .projectBtn {
+      background-color: $highlight;
+      padding: 8px 24px;
+      margin: 0 auto 0 auto;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 15px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $mainColor;
+      overflow: hidden;
+
+      &:hover {
+        background-color: $highlight2;
+        color: $secondary;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    padding: 0;
+    .project {height: 100vh;}
+  }
+}
+
+#about {
+  background-color: $secondary;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  img {
+    width: 65%;
+    margin-left: -80px;
+  }
+
+  .thinLine {width: 128px;}
+
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    img {width: 150%; margin-left: 0;}
+  }
+}
+
+#talents {
+  background-color: $mainColor;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  color: $secondary;
+
+  img {
+    width: 80%;
+    margin-right: -80px;
+  }
+
+  .thinLine {width: 160px;}
+
+  ul {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 36px;
+    padding-left: 12px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    img {width: 150%; margin-right: 0;}
+  }
+}
+
+#contact {
+  background-color: $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .thinLine {
+    width: 320px;
+    margin: auto;
+    @media only screen and (max-width: 640px) {width: 200px;}
+  }
+
+  a {
+    color: $highlight2;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100% auto;
+  height: 15vh;
+  background-color: $tertiary;
+  padding: 0 80px;
+  z-index: 98;
+
+  .btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 138px;
+    top: -24px;
+  }
+
+  .btnBack {
+    width: 164px;
+  }
+
+  p {
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+
+}

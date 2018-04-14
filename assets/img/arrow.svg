@@ -1,0 +1,4 @@
+<svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 136">
+  <path id="arrow-shaft" class="st0" d="M23 0h2v126h-2V0z"/>
+  <path id="arrow-head" class="st0" d="M33 120l-8 16-10-16h18z"/>
+</svg>
